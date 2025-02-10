@@ -1,8 +1,9 @@
-name: Deploy
+name: Aarch64
 on:
   push:
     tags:
       - "*"
+  workflow_dispatch:  # Allows manual triggering
 
 env:
   CRATE_NAME: mdbook-admonish
